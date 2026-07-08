@@ -32,3 +32,14 @@ emailInput.addEventListener("keydown", function(event) {
     }
 
 });
+function SigninSubmit() {
+
+    const email = document.getElementById("signin-email").value.trim();
+
+    if (email === "") {
+        alert("Please enter your email or mobile number.");
+        return;
+    }
+
+    window.location.href = "main.html";
+}
