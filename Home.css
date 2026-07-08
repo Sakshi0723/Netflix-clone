@@ -267,3 +267,149 @@ header{
     flex-direction: column;
     justify-content: center;
 }
+/* =======================
+   Mobile Responsive
+======================= */
+@media (max-width: 768px){
+
+    .header{
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    #logo{
+        font-size: 35px;
+    }
+
+    .nav{
+        gap: 10px;
+    }
+
+    #language{
+        font-size: 14px;
+        padding: 6px;
+        margin-right: 10px;
+    }
+
+    #sign-in{
+        font-size: 14px;
+        padding: 8px 15px;
+        margin-right: 0;
+    }
+
+    .content{
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .heading{
+        font-size: 40px;
+        line-height: 48px;
+        margin-top: 80px;
+    }
+
+    .sub-heading{
+        font-size: 20px;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+
+    .email-form{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #email{
+        width: 90%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #get-started{
+        width: 90%;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .form{
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .signin-form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #signin-email,
+    #signin-button{
+        width: 100%;
+    }
+
+    #trending-heading,
+    #reasons-heading{
+        margin-left: 20px;
+        font-size: 24px;
+    }
+
+    .trending-movies{
+        overflow-x: auto;
+        display: flex;
+        gap: 15px;
+        justify-content: flex-start;
+        padding: 0 20px 20px;
+    }
+
+    .trending-movies::-webkit-scrollbar{
+        display: none;
+    }
+
+    .movie-card{
+        min-width: 150px;
+        margin: 0;
+    }
+
+    .movie-card img{
+        width: 150px;
+        border-radius: 8px;
+    }
+
+    .reason-cards{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .reason-card{
+        width: auto;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .footer{
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-links a{
+        margin: 0;
+    }
+}
