@@ -12,3 +12,23 @@
       header.style.background="none";
       header.style.borderBottom = "1px solid #3e3d3d";
     }
+
+    function GetStarted(){
+      window.location.href="main.html";
+    }
+
+    const emailInput = document.getElementById("email");
+
+emailInput.addEventListener("keydown", function(event) {
+
+    if (event.key === "Enter") {
+        event.preventDefault();
+
+        if (emailInput.value.trim() !== "") {
+            window.location.href = "main.html";
+        } else {
+            alert("Please enter your email address.");
+        }
+    }
+
+});

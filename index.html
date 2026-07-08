@@ -10,10 +10,10 @@
 <body>
     <div class="hero" id="hero">
     <header class="header">
-        <nav class="nav-links"></nav>
         <div class="logo">
             <h1 id="logo">Netflix</h1>
         </div>
+        <nav>
         <div class="nav">
             <select id="language">
                 <option value="en">English</option>
@@ -28,7 +28,7 @@
         <h2 id="signHead">Enter your info to sign in</h2>
         <h4 id="head2">Or get started with a new account</h4>
         <div class="signin-form">
-        <input type="email" placeholder="Email or mobile number" id="signin-email">
+        <input type="email" placeholder="Email or mobile number" id="signin-email" required>
         <button id="signin-button" onclick="SigninSubmit()">Continue</button>
         </div>
     </div>
@@ -38,27 +38,27 @@
         <span class="sub-heading">Start at rs149. Cancel anytime.</span>
         <p class="description">Ready to watch? Enter your email to create or restart your membership.</p>
         <div class="email-form">
-            <input type="email" placeholder="Email address" id="email">
-            <button id="get-started" onclick="GetStarted()">Get Started ></button>
+            <input type="email" placeholder="Email address" id="email" required>
+            <button id="get-started" ondblclick="GetStarted()">Get Started ></button>
         </div>
     </div>
     </div>
     <div class="trending">
        <h2 id="trending-heading">Trending Now</h2>
        <div class="trending-movies">
-            <div class="movie-card">
+            <div class="movie-card" onclick="card1()">
                 <img src="images/n1.jpg" alt="Movie 1">
             </div>
-            <div class="movie-card">
+            <div class="movie-card" onclick="card2()">
                 <img src="images/n2.jpg" alt="Movie 2">
             </div>
-            <div class="movie-card">
+            <div class="movie-card" onclick="card3()">
                 <img src="images/n3.jpg" alt="Movie 3">
             </div>
-            <div class="movie-card">
+            <div class="movie-card" onclick="card4()">
                 <img src="images/n4.jpg" alt="Movie 4">
             </div>
-            <div class="movie-card">
+            <div class="movie-card" onclick="card1()">
                 <img src="images/n1.jpg" alt="Movie 5">
             </div>
        </div>
