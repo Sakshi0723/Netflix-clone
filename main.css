@@ -7,7 +7,7 @@ body{
 
 .hero{
     min-height: 100vh;
-    background: linear-gradient(to bottom, #0d0d0d, #000);
+    background: linear-gradient(to bottom, #0d0d0d, #837676);
 }
 
 .header{
@@ -141,4 +141,108 @@ body{
 
 .info-btn:hover{
     background:rgba(109,109,110,1);
+}
+/* ===========================
+   Mobile Responsive (768px)
+=========================== */
+@media screen and (max-width: 768px){
+
+    /* Header */
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .logo{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .navigation{
+        width: 100%;
+    }
+
+    .nav{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav a{
+        font-size: 15px;
+    }
+
+    /* Banner */
+    .banner{
+        height: auto;
+        padding: 60px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner-content{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .banner-content h1{
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .banner-content p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Buttons */
+    .banner-buttons{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .play-btn,
+    .info-btn{
+        width: 220px;
+        font-size: 18px;
+        padding: 14px;
+    }
+
+}
+@media screen and (max-width: 480px){
+
+    #logo{
+        font-size: 34px;
+    }
+
+    .nav{
+        gap: 10px;
+    }
+
+    .nav a{
+        font-size: 14px;
+    }
+
+    .banner{
+        padding: 40px 15px;
+    }
+
+    .banner-content h1{
+        font-size: 32px;
+    }
+
+    .banner-content p{
+        font-size: 15px;
+    }
+
+    .play-btn,
+    .info-btn{
+        width: 100%;
+        max-width: 280px;
+        font-size: 16px;
+    }
 }
