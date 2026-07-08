@@ -14,6 +14,11 @@
     }
 
     function GetStarted(){
+         const email1 = document.getElementById("email").value.trim();
+       if (email1 === "") {
+        alert("Please enter your email or mobile number.");
+        return;
+    }
       window.location.href="main.html";
     }
 
